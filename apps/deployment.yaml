@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: hello-django
-        image: qquay.io/vguar/hello-django
+        image: quay.io/vguar/hello-django
         ports:
         - containerPort: 8080
           name: http
