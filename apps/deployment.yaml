@@ -16,21 +16,21 @@ spec:
     spec:
       containers:
       - name: hello-django
-        image: quay.io/vguar/hello-django
+        image: quay.io/vguar/hello-world-java
         ports:
-        - containerPort: 8000
+        - containerPort: 8080
           name: http
         livenessProbe:
           httpGet:
             path: /health
-            port: 8000
+            port: 8080
           initialDelaySeconds: 5
           timeoutSeconds: 2
           periodSeconds: 15
         readinessProbe:
           httpGet:
             path: /health
-            port: 8000
+            port: 8080
           initialDelaySeconds: 10
           timeoutSeconds: 2
           periodSeconds: 15
