@@ -5,7 +5,7 @@ metadata:
   labels:
     app: hello-django
 spec:
-  replicas: 1
+  replicas: 4
   selector:
     matchLabels:
       app: hello-django
